@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael</title>
     <link href="./dist/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/title.png">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Eudoxus+Sans:wght@400;500;700&display=swap" rel="stylesheet"> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     
     
   </head>
    
   
-  <body>
-    <header class="border p-[8px] border-gray-100 text-gray-900">
+  <body class="hind-madurai-regular">
+    <header class="md:border p-[8px] border-gray-100 text-gray-900">
       <nav class="container mx-auto flex items-center justify-between py-4">
-        <a href="#"><img src="./assets/logo.svg" alt="Michael Logo" class="w-[10rem]"></a>
+        <a href="#"><img src="./assets/logo.svg" alt="Michael Logo" class="w-[6rem] md:w-[10rem]"></a>
         <ul class="hidden md:flex items-center text-xl space-x-6">
           <li><a href="index.html" class="hover:text-gray-900 nav-link" data-page="my-work">My Work</a></li>
           <li><a href="about.html" class="hover:text-gray-900 nav-link" data-page="about">About Michael</a></li>
@@ -40,18 +44,12 @@
             Send an Email
           </a>
         </ul>
-        <button class="md:hidden text-2xl pr-2 pl-2 rounded-lg border border-gray-300 text-gray-500 hover:bg-gray-50" onclick="toggleMenu()">☰</button>
+        <button class="md:hidden text-2xl pr-2 pl-2 rounded-lg  border-gray-300 text-gray-500 hover:bg-gray-50" onclick="toggleMenu()">☰</button>
       </nav>
       <!-- Mobile Menu -->
-      <ul id="mobile-menu" class="absolute hidden md:hidden bg-white text-left w-[50%] right-2 top-[6.4rem] shadow-lg border-t border-gray-200 p-6 space-y-4">
-        <ul class="hidden md:flex items-center text-xl space-x-6">
-          <li>
-            <a href="index.html" class="nav-link hover:text-gray-900" data-page="my-work">My Work</a>
-          </li>
-          <li>
-            <a href="about.html" class="nav-link hover:text-gray-900" data-page="about">About Michael</a>
-          </li>
-        </ul>
+      <ul id="mobile-menu" class="absolute hidden md:hidden bg-white text-left w-[50%] right-2 top-[5rem] shadow-lg border-gray-200 p-6 space-y-4">
+        <li><a href="index.html" class="block text-xl text-gray-800 nav-link" data-page="my-work">My Work</a></li>
+        <li><a href="about.html" class="block text-xl text-gray-800 nav-link" data-page="about">About Micheal</a></li>
         
         <li class="flex items-center space-x-4">
           <a href="https://www.behance.net/oluamichael" class="relative group p-[10px] border-gray-100 border icon-hover rounded-lg">
@@ -66,7 +64,7 @@
         </li>
         <li>
           <a href="mailto:michaeloluwaseyi285@gmail.com?subject=Hello&body=I%20would%20like%20to%20get%20in%20touch!" target="_blank"
-            class="px-4 py-2 border-2 border-[#008281] rounded-lg text-[#008281] hover:bg-[#008281] hover:text-white">
+            class="px-4 py-2 border-2 hind-madurai-regular border-[#008281] rounded-lg text-[#008281] hover:bg-[#008281] hover:text-white">
             Send an Email
           </a>
         </li>
@@ -75,22 +73,26 @@
     
     
 
-    <main class="container mx-auto px-2 md:px-1  py-8">
+    <main class="container mx-auto px-2 md:px-1 ">
       <!-- Hero Section -->
       <section class="p-4">
-        <h3 class="md:text-5xl text-2xl text-black">
-          Five years <span style="color: #008281">Edtech Product Designer (UX/UI) </span>with Experience Leading Design at Early Stage and Edtech Companies.          
+        <h3 class="md:text-5xl text-3xl text-gray-700 ">
+          Five years <span style="color: #008281" class="font-bold">Edtech Product Designer (UX/UI) </span>with Experience Leading Design at Early Stage and Edtech Companies.          
         </h3>
-        <button class="mt-6 px-10 py-4 bg-black text-white text-lg rounded-full hover:bg-[#008281] hover:text-white transition duration-300">
+        <button class="mt-5 px-10 py-4 bg-gray-800 text-white text-lg rounded-full hover:bg-[#008281] hover:text-white transition duration-300">
           <a href="https://www.linkedin.com/in/oluwamichael" target="_blank">Send a LinkedIn DM</a>
         </button>
       </section>
     
-      <section class="mt-12  border pt-10 pb-10 rounded-3xl">
-        <h2 class="text-2xl font-medium text-gray-700 text-center mb-10">
+      <section class="mt-12 md:border md:pt-10 pb-10 rounded-3xl">
+        <h2 class="text-xl ml-7 md:hidden font-medium text-gray-700 text-left md:text-center mb-10">
+          Worked with Top Crypto <br> Companies across all Verticals
+        </h2>
+        <h2 class="hidden text-xl ml-7 md:block md:text-2xl font-medium text-gray-700 text-center mb-10">
           Worked with Top Crypto Companies across all Verticals
         </h2>
-        <div class="max-w-5xl  flex flex-wrap justify-center sm:justify-between w-full mx-auto gap-2">
+      
+        <div class="max-w-5xl w-full mx-auto grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 place-items-center">
           <div class="h-16 w-16 p-2 border border-gray-100 rounded-lg bg-gray-50 flex items-center justify-center hover:scale-110 hover:shadow-lg transition">
             <img src="./assets/icon1.png" alt="Company 1" class="max-h-full max-w-full">
           </div>
@@ -130,7 +132,8 @@
         </div>
       </section>
       
-      <section class="mt-12 w-full">
+      
+      <section class="mt-12 w-full ">
         <div
           class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center md:p-10 p-4  md:pb-28 pt-5 md:pt-20 rounded-2xl"
           style="
@@ -141,8 +144,8 @@
         >
           <!-- Left Content -->
           <div>
-            <h3 class="text-xl font-eudoxus md:text-2xl font-bold text-black">ExamCrush Inc</h3>
-            <p class="mt-4 md:text-lg text-lg text-gray-700 leading-relaxed font-eudoxus" style="font-size: 30px; line-height: 40px;">
+            <h3 class="text-sm font-semibold font-eudoxus md:text-2xl md:font-bold text-[#008281]">ExamCrush Inc</h3>
+            <p class="mt-4 md:text-2xl text-lg text-gray-700 leading-relaxed font-eudoxus">
               Led the Product Development of dynamic learning modules that fostered <span class="font-semibold text-black">deep
                 engagement and knowledge retention among diverse learner demographics charting Top</span> <span class="font-semibold text-black">8</span>
               most used Education Application on Apple Store.
@@ -150,7 +153,7 @@
             <!-- <a href="https://apps.apple.com/ng/app/examcrush-ai-powered-quizzes/id6636534059" target="_blank" class="items-center font-bold mt-6 text-orange-500 hover:underline"> -->
               <a href="https://apps.apple.com/ng/app/examcrush-ai-powered-quizzes/id6636534059" target="_blank" class="inline-flex items-center font-bold mt-6 text-[#510A7E] hover:underline">
                 View Live Product
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-5 h-5 ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-2 h-2 md:w-5 md:h-5 md:ml-2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
               </a>
@@ -175,8 +178,8 @@
         >
           <!-- Left Content -->
           <div>
-            <h3 class="text-xl font-eudoxus md:text-2xl font-bold text-black">PrepCohort</h3>
-            <p class="mt-4  md:text-lg text-gray-700 font-eudoxus leading-relaxed"style="font-size: 30px; line-height: 40px;">
+            <h3 class="text-sm font-semibold font-eudoxus md:text-2xl md:font-bold text-[#008281]">Prep Cohort</h3>
+            <p class="mt-4 md:text-2xl text-lg text-gray-700 leading-relaxed font-eudoxus">
               Created a Virtual Learning Environment that connects a larger Student Base with Instructors tailored to provide quality
               education to diverse learners having over 88k Instructors and 30k downloads in the first <span class="font-semibold text-black">7 months</span> of launch.
             </p>
@@ -208,8 +211,8 @@
         >
           <!-- Left Content -->
           <div>
-            <h3 class="text-xl font-eudoxus md:text-2xl font-bold text-black">YooFinn</h3>
-            <p class="mt-4  text-base md:text-lg text-gray-700 font-eudoxus leading-relaxed " style="font-size: 30px; line-height: 40px;">
+            <h3 class="text-sm font-semibold font-eudoxus md:text-2xl md:font-bold text-[#008281]">YooFinn</h3>
+            <p class="mt-4 md:text-2xl text-lg text-gray-700 leading-relaxed font-eudoxus">
               Contributed to a Solution with the use of AI and Machine Learning that is on a mission to give <span class="font-semibold text-black">19M students</span>
               across the United States the best data for their Higher Educations and Career paths.
             </p>
@@ -241,8 +244,8 @@
         >
           <!-- Left Content -->
           <div>
-            <h3 class="text-xl font-eudoxus md:text-2xl font-bold text-black">CST Savings</h3>
-            <p class="mt-4 text-base md:text-lg text-gray-700 font-eudoxus leading-relaxed" style="font-size: 30px; line-height: 40px;">
+            <h3 class="text-sm font-semibold font-eudoxus md:text-2xl md:font-bold text-[#008281]">CST Savings</h3>
+            <p class="mt-4 md:text-2xl text-lg text-gray-700 leading-relaxed font-eudoxus">
               A Registered Education Savings Plan in Canada designed to save for Students' post-secondary education with total
               assets of <span class="font-semibold text-black">$4.8 billion and $260M</span> paid out to students in 2023.
             </p>
@@ -271,12 +274,12 @@
       <p class="mt-2 text-gray-600">
         Product Designer and design system specialist
       </p>
-      <p class="mt-6 text-3xl text-gray-700">
+      <p class="mt-6 text-xl md:text-2xl text-left  text-gray-700 ">
         Do you have a question, an idea, or a project you need help with? <br> Send an email to 
-        <a href="mailto:michaeloluwaseyi285@gmail.com" target="_blank" class="text-[#008281] font-medium text-3xl hover:underline">Michael</a>
+        <a href="mailto:contact@druids.design" class="text-[#008281] font-bold text-xl md:text-3xl hover:underline">Michael</a>
       </p>
-      <p class="mt-8 text-gray-600 text-xl text-sm">
-        © 2025, Built by <span class="text-[#008281] font-medium"><a href="https://isreal-oparanti.vercel.app/" target="_blank">JSON</a></span>
+      <p class="mt-8 text-gray-600 text-lg md:text-2xl text-left">
+        © 2025, Built by <span class="text-[#008281] font-medium">JSON</span>
       </p>
       <!-- <ul class="mt-8 flex space-x-4">
         <li>
