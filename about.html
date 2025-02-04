@@ -13,14 +13,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 <script>
-    // Toggle menu visibility
+    
     function toggleMenu() {
       const menu = document.getElementById('mobile-menu');
       menu.classList.toggle('hidden');
     }
   </script> 
 <body class="hind-madurai-regular">
-  <!-- Header -->
+  
   <header class="md:border p-[8px] border-gray-100 text-gray-900">
     <nav class="container mx-auto flex items-center justify-between py-4">
       <a href="#"><img src="./assets/logo.svg" alt="Michael Logo" class="w-[10rem]"></a>
@@ -28,15 +28,15 @@
         <li><a href="index.html" class="hover:text-gray-900 nav-link" data-page="my-work">My Work</a></li>
         <li><a href="about.html" class="hover:text-gray-900 nav-link" data-page="about">About Michael</a></li>
         <li class="flex space-x-4 items-center">
-          <!-- Telegram -->
-          <a href="https://www.behance.net/oluamichael" class="relative group p-[10px] border-gray-100 border icon-hover rounded-lg">
+          
+          <a href="https://www.behance.net/oluamichael" class="relative group p-[10px] border-gray-100 border icon-hover rounded-lg" target="_blank">
             <img src="./assets/Group.png" alt="Telegram Icon" class="w-8 icon-hover">
           </a>
-          <!-- Twitter -->
+          
           <a href="https://x.com/designedbykidd" target="_blank" class="relative group">
             <img src="./assets/twitter.svg" alt="Twitter Icon" class="h-12 w-12 rounded-lg object-cover icon-hover">
           </a>
-          <!-- Dribbble -->
+           
           <a href="https://dribbble.com/techkidd" target="_blank" class="relative group">
             <img src="./assets/drible.svg" alt="Dribbble Icon" class="h-12 w-12 rounded-lg object-cover icon-hover">
           </a>
@@ -48,12 +48,12 @@
       </ul>
       <button class="md:hidden text-2xl pr-2 pl-2 rounded-lg md:border border-gray-300 text-gray-500 hover:bg-gray-50" onclick="toggleMenu()">☰</button>
     </nav>
-    <!-- Mobile Menu -->
+    
     <ul id="mobile-menu" class="absolute hidden md:hidden bg-white text-left w-[50%] right-2 top-[6.4rem] shadow-lg border-t border-gray-200 p-6 space-y-4">
       <li><a href="index.html" class="block text-xl text-gray-800 nav-link" data-page="my-work">My Work</a></li>
       <li><a href="about.html" class="block text-xl text-gray-800 nav-link" data-page="about">About Micheal</a></li>
       <li class="flex items-center space-x-4">
-        <a href="https://www.behance.net/oluamichael" class="relative group p-[10px] border-gray-100 border icon-hover rounded-lg">
+        <a href="https://www.behance.net/oluamichael" class="relative group p-[10px] border-gray-100 border icon-hover rounded-lg" target="_blank">
           <img src="./assets/Group.png" alt="Telegram Icon" class="w-8 icon-hover">
         </a>
         <a href="https://x.com/designedbykidd" class="relative group">
@@ -71,21 +71,19 @@
       </li>
     </ul>
   </header>
-  <!-- Main Content -->
+   
   <main class="container mx-auto py-8 px-6">
     <h1 class="hidden md:block  md:text-3xl font-semibold text-gray-900">About Me</h1>
     <p class="mt-2 text-xl md:text-2xl text-gray-700 leading-relaxed">
         Hi, I’m Michael Obe known as “Techkidd” a 5 years experienced Product Designer and UX Researcher, I love creating digital designs and meeting my customers needs by breathing life into shapes.
     </p>
 
-    <!-- Grid Section -->
+    
     <section class="mt-12  gap-8">
       <!-- Text Section -->
       <div>
         <h2 class="text-xl md:text-3xl font-semibold text-gray-900">My Journey</h2>
-        <!-- <p class="mt-4 text-3xl text-gray-700 leading-relaxed">
-          Starting my career in design, I discovered my love for creating engaging user experiences. Over the years, I’ve worked on projects ranging from education platforms to financial tools, driving user engagement and delivering impactful solutions.
-        </p> -->
+        
         <p class="mt-2 text-xl md:text-2xl text-gray-700 leading-relaxed">
             Passionate about about visual design and emerging technology. I specialize in UX/UI Design, UX research, Interaction designs and my passion is all about solving complex problems through data driven process by understanding users empathy and creating seamless human-centred design to help meet your business goals.<br><br>
 
@@ -96,21 +94,12 @@
             I am currently based in Lagos, Nigeria, working with people and businesses all over the world.
         </p>
       </div>
-
-      <!-- Image Section
-      <div class="flex justify-center items-center">
-        <img src="./assets/mic.jpg" alt="Michael" class="rounded-lg  w-full max-w-md object-cover">
-      </div> -->
+ 
     </section>
 
-    <!-- Second Grid -->
+     
     <section class="mt-12   gap-8">
-      <!-- Image -->
-      <!-- <div class="flex justify-center items-start">
-        <img src="./assets/mic.jpg" alt="Work Process" class="rounded-lg  w-full max-w-md object-cover">
-      </div> -->
-
-      <!-- Text -->
+      
       <div>
         <h2 class="text-xl md:text-3xl font-semibold text-gray-900">How I work</h2>
         <p class="mt-2 text-xl md:text-2xl text-gray-700 leading-relaxed">
@@ -132,28 +121,28 @@
       <h2 class="text-xl md:text-3xl font-semibold text-gray-900">Gallery</h2>
       <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
         <div class="group overflow-hidden ">
-          <img src="./assets/Frame 5.png" alt="Image 1" class="w-full h-auto object-cover filter grayscale transition duration-300 group-hover:filter-none">
+          <img src="./assets/Frame 5.svg" alt="Image 1" class="w-full h-auto object-cover filter grayscale transition duration-300 group-hover:filter-none">
         </div>
         <div class="group overflow-hidden">
-          <img src="./assets/Frame 6.png" alt="Image 2" class="w-full h-auto object-cover filter grayscale transition duration-300 group-hover:filter-none">
+          <img src="./assets/Frame 6.svg" alt="Image 2" class="w-full h-auto object-cover filter grayscale transition duration-300 group-hover:filter-none">
         </div>
         <div class="group overflow-hidden">
-          <img src="./assets/Frame 7.png" alt="Image 3" class="w-full h-auto object-cover filter grayscale transition duration-300 group-hover:filter-none">
+          <img src="./assets/Frame 7.svg" alt="Image 3" class="w-full h-auto object-cover filter grayscale transition duration-300 group-hover:filter-none">
         </div>
         <div class="group overflow-hidden">
-          <img src="./assets/Frame 8.png" alt="Image 4" class="w-full h-auto object-cover filter grayscale transition duration-300 group-hover:filter-none">
+          <img src="./assets/Frame 8.svg" alt="Image 4" class="w-full h-auto object-cover filter grayscale transition duration-300 group-hover:filter-none">
         </div>
         <div class="group overflow-hidden">
-          <img src="./assets/Frame 9.png" alt="Image 5" class="w-full h-auto object-cover filter grayscale transition duration-300 group-hover:filter-none">
+          <img src="./assets/Frame 9.svg" alt="Image 5" class="w-full h-auto object-cover filter grayscale transition duration-300 group-hover:filter-none">
         </div>
         <div class="group overflow-hidden">
-          <img src="./assets/Frame 10.png" alt="Image 6" class="w-full h-auto object-cover filter grayscale transition duration-300 group-hover:filter-none">
+          <img src="./assets/Frame 10.svg" alt="Image 6" class="w-full h-auto object-cover filter grayscale transition duration-300 group-hover:filter-none">
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  
   <footer class="mt-16 px-8 py-12 border-t border-gray-300">
     <img src="./assets/logo.svg" alt="Michael Logo" class="w-[10rem] ml-[-3px]">
     <p class="mt-2 text-gray-600">
@@ -180,12 +169,12 @@
     document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".nav-link");
 
-  // Determine the current page based on the URL
+   
   const currentPage = window.location.pathname.includes("about.html")
     ? "about"
     : "my-work";
 
-  // Apply active styles and underline
+   
   navLinks.forEach((link) => {
     if (link.dataset.page === currentPage) {
       link.classList.add("text-[#008281]", "font-semibold");
